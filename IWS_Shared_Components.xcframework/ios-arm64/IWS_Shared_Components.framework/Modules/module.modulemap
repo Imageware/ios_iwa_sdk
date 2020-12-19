@@ -1,0 +1,11 @@
+framework module IWS_Shared_Components {
+  umbrella header "IWS_Shared_Components.h"
+
+  export *
+  module * { export * }
+}
+
+module IWS_Shared_Components.Swift {
+    header "IWS_Shared_Components-Swift.h"
+    requires objc
+}
