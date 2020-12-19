@@ -27,7 +27,8 @@ let package = Package(
                             .target(name: "GMI", condition: .when(platforms: .some([.iOS]))),
                             .target(name: "IWS_Shared_Components", condition: .when(platforms: .some([.iOS]))),
                             .target(name: "PalmAPI", condition: .when(platforms: .some([.iOS]))),
-                            .product(name: "RealmSwift", package: "Realm")
+                            .product(name: "RealmSwift", package: "Realm"),
+                            .product(name: "Realm", package: "Realm")
                         ],
                         path: "GMIPath",
                         linkerSettings: [
