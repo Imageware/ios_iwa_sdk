@@ -27,7 +27,7 @@ let package = Package(
                             .target(name: "PalmAPI", condition: .when(platforms: .some([.iOS]))),
                             .product(name: "RealmSwift", package: "Realm")
                         ],
-                        path: "."
+                        path: "GMIPath"
                 )
     ]
 )
