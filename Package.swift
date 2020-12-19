@@ -11,7 +11,8 @@ let package = Package(
     products: [
         .library(
             name: "GMIPackage",
-            targets: ["GMIPackage"]),
+            targets: ["GMIPackage"])
+        
     ],
     dependencies: [
         .package(name: "Realm", url: "https://github.com/realm/realm-cocoa", .exact(Version("10.5.0")))
@@ -32,8 +33,9 @@ let package = Package(
                         ],
                         path: "GMIPath",
                         linkerSettings: [
-                                .linkedFramework("Combine", .when(platforms: [.iOS]))
+                                .linkedFramework("SwiftUI", .when(platforms: [.iOS]))
                               ]
                 )
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )
