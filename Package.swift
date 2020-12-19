@@ -33,7 +33,9 @@ let package = Package(
                         ],
                         path: "GMIPath",
                         linkerSettings: [
-                                .linkedFramework("SwiftUI", .when(platforms: [.iOS]))
+                                .linkedFramework("SwiftUI", .when(platforms: [.iOS])),
+                            .linkedFramework("Combine", .when(platforms: [.iOS])),
+                            .linkedFramework("Foundation", .when(platforms: [.iOS]))
                               ]
                 )
     ],
