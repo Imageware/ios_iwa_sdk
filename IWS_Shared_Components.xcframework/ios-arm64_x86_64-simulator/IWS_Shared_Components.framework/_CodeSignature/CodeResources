@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>.DS_Store</key>
+		<data>
+		x8aLcNR6AUnUa4WsdLkNFt+iw6A=
+		</data>
 		<key>Headers/IWS_Shared_Components-Swift.h</key>
 		<data>
 		/6kBT4HcinAXbik7jPCian65+U8=
@@ -36,49 +40,33 @@
 		<data>
 		M3QK5bOKyE7cG28vLGERqW0BLBU=
 		</data>
-		<key>Modules/IWS_Shared_Components.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
-		<data>
-		9CG9KAjmLPpNFB3D8RUFW3ILOnU=
-		</data>
 		<key>Modules/IWS_Shared_Components.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		BxVL3a/lLpC/A+S7LKBjzA76iaM=
+		Wzy8rsytD2ekRkfoXAFte8nTAJ0=
 		</data>
 		<key>Modules/IWS_Shared_Components.swiftmodule/arm64.swiftdoc</key>
 		<data>
 		M3QK5bOKyE7cG28vLGERqW0BLBU=
 		</data>
-		<key>Modules/IWS_Shared_Components.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		9CG9KAjmLPpNFB3D8RUFW3ILOnU=
-		</data>
 		<key>Modules/IWS_Shared_Components.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		BxVL3a/lLpC/A+S7LKBjzA76iaM=
+		Wzy8rsytD2ekRkfoXAFte8nTAJ0=
 		</data>
 		<key>Modules/IWS_Shared_Components.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
 		GB7xQkZGgR+QeatzJ3k79iSgvY0=
 		</data>
-		<key>Modules/IWS_Shared_Components.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
-		<data>
-		czAtlMD1xHTKZjgQNNCBvDOxxDM=
-		</data>
 		<key>Modules/IWS_Shared_Components.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		t6GH+OuAJhSthfxjfOHGq8ZePT8=
+		2v7gVcul4alsooKThhCVFTFv7Hs=
 		</data>
 		<key>Modules/IWS_Shared_Components.swiftmodule/x86_64.swiftdoc</key>
 		<data>
 		GB7xQkZGgR+QeatzJ3k79iSgvY0=
 		</data>
-		<key>Modules/IWS_Shared_Components.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		czAtlMD1xHTKZjgQNNCBvDOxxDM=
-		</data>
 		<key>Modules/IWS_Shared_Components.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		t6GH+OuAJhSthfxjfOHGq8ZePT8=
+		2v7gVcul4alsooKThhCVFTFv7Hs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -136,18 +124,11 @@
 			7Ywc2u9T3LEMW3WTwFDWNEpsSSBnEsgetIEePm239f4=
 			</data>
 		</dict>
-		<key>Modules/IWS_Shared_Components.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			3morb6y6KGP5NaV5Ql+jIcXnTPlVcIxF9POfSl8qnbo=
-			</data>
-		</dict>
 		<key>Modules/IWS_Shared_Components.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yCstmnRxQ+oYs4f4LTRRBrDQHqCczc9gJkvgvmM8liY=
+			6oKrlc8Dh0uRIJbIVw9+ziZkfOu/UTge4gPnTv0jN4I=
 			</data>
 		</dict>
 		<key>Modules/IWS_Shared_Components.swiftmodule/arm64.swiftdoc</key>
@@ -157,18 +138,11 @@
 			7Ywc2u9T3LEMW3WTwFDWNEpsSSBnEsgetIEePm239f4=
 			</data>
 		</dict>
-		<key>Modules/IWS_Shared_Components.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			3morb6y6KGP5NaV5Ql+jIcXnTPlVcIxF9POfSl8qnbo=
-			</data>
-		</dict>
 		<key>Modules/IWS_Shared_Components.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yCstmnRxQ+oYs4f4LTRRBrDQHqCczc9gJkvgvmM8liY=
+			6oKrlc8Dh0uRIJbIVw9+ziZkfOu/UTge4gPnTv0jN4I=
 			</data>
 		</dict>
 		<key>Modules/IWS_Shared_Components.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -178,18 +152,11 @@
 			gsd2V4oINYF75kfJV871U38Isf6goyM7Z5C+5TilzBw=
 			</data>
 		</dict>
-		<key>Modules/IWS_Shared_Components.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			nUeUvTBK2ik2xWTMdRpqpGiRMJQzjWUY3eBM6UfQdls=
-			</data>
-		</dict>
 		<key>Modules/IWS_Shared_Components.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			seKkBO731nCBcmA3cQSegC9Z2m1+8e+toN6sW8Hb4LM=
+			kdSLp/DEpatoxgHcUpqSx21J4v8MXruoGkqTsLjqS4I=
 			</data>
 		</dict>
 		<key>Modules/IWS_Shared_Components.swiftmodule/x86_64.swiftdoc</key>
@@ -199,18 +166,11 @@
 			gsd2V4oINYF75kfJV871U38Isf6goyM7Z5C+5TilzBw=
 			</data>
 		</dict>
-		<key>Modules/IWS_Shared_Components.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			nUeUvTBK2ik2xWTMdRpqpGiRMJQzjWUY3eBM6UfQdls=
-			</data>
-		</dict>
 		<key>Modules/IWS_Shared_Components.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			seKkBO731nCBcmA3cQSegC9Z2m1+8e+toN6sW8Hb4LM=
+			kdSLp/DEpatoxgHcUpqSx21J4v8MXruoGkqTsLjqS4I=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
