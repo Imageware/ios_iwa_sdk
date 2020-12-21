@@ -31,12 +31,7 @@ let package = Package(
                             .product(name: "RealmSwift", package: "Realm"),
                             .product(name: "Realm", package: "Realm")
                         ],
-                        path: "GMIPath",
-                        linkerSettings: [
-                                .linkedFramework("SwiftUI", .when(platforms: [.iOS])),
-                            .linkedFramework("Combine", .when(platforms: [.iOS])),
-                            .linkedFramework("Foundation", .when(platforms: [.iOS]))
-                              ]
+                        path: "GMIPath"
                 )
     ],
     swiftLanguageVersions: [.v5]
