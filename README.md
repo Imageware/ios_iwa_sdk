@@ -1,3 +1,3 @@
-# GMIPackage
+# ImageWare Authenticate iOS Mobile SDK
 
-A description of this package.
+For more information, please visit [documentation.iwsinc.com](https://documentation.iwsinc.com)
