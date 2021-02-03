@@ -11,7 +11,7 @@ let package = Package(
     products: [
         .library(
             name: "IWSAuthSDKiOS",
-            targets: ["GMI"])
+            targets: ["IWSAuthSDKiOS"])
         
     ],
     dependencies: [
@@ -23,7 +23,7 @@ let package = Package(
                       path: "IWS_Shared_Components.xcframework"),
         
         .binaryTarget(name: "PalmAPI", path: "PalmAPI.xcframework"),
-        .target(name: "GMIPackage",
+        .target(name: "IWSAuthSDKiOS",
                         dependencies: [
                             .target(name: "GMI", condition: .when(platforms: .some([.iOS]))),
                             .target(name: "IWS_Shared_Components", condition: .when(platforms: .some([.iOS]))),
