@@ -10,20 +10,15 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "IWSAuthSDKiOS",
-            targets: ["IWSAuthSDKiOS"])
+            name: "GMIPackage",
+            targets: ["GMIPackage"])
         
     ],
     dependencies: [
         .package(name: "Realm", url: "https://github.com/realm/realm-cocoa", .exact(Version("10.5.0")))
     ],
     targets: [
-        .binaryTarget(name: "GMI", url: "https://github.com/ImageWare/IWSAuthSDKiOS/raw/main/GMI.xcframework.zip", checksum: "70f9bb99a374d2ad74ebc6f949f93b14d4ef40769c73ed9dbed178e9abb11c32"),
-        .binaryTarget(name: "IWS_Shared_Components",
-                      path: "IWS_Shared_Components.xcframework"),
-        
-        .binaryTarget(name: "PalmAPI", path: "PalmAPI.xcframework"),
-        .target(name: "IWSAuthSDKiOS",
+        .target(name: "GMIPackage",
                         dependencies: [
                             .target(name: "GMI", condition: .when(platforms: .some([.iOS]))),
                             .target(name: "IWS_Shared_Components", condition: .when(platforms: .some([.iOS]))),
@@ -32,7 +27,12 @@ let package = Package(
                             .product(name: "Realm", package: "Realm")
                         ],
                         path: "GMIPath"
-                )
+                ),
+        .binaryTarget(name: "GMI", url: "https://github.com/ImageWare/IWSAuthSDKiOS/raw/main/GMI.xcframework.zip", checksum: "70f9bb99a374d2ad74ebc6f949f93b14d4ef40769c73ed9dbed178e9abb11c32"),
+        .binaryTarget(name: "IWS_Shared_Components",
+                      path: "IWS_Shared_Components.xcframework"),
+        
+        .binaryTarget(name: "PalmAPI", path: "PalmAPI.xcframework")
     ],
     swiftLanguageVersions: [.v5]
 )
