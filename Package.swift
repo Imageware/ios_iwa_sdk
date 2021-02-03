@@ -11,7 +11,7 @@ let package = Package(
     products: [
         .library(
             name: "IWSAuthSDKiOS",
-            targets: ["IWSAuthSDKiOS"])
+            targets: ["GMI"])
         
     ],
     dependencies: [
