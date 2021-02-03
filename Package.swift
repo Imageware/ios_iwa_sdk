@@ -18,7 +18,7 @@ let package = Package(
         .package(name: "Realm", url: "https://github.com/realm/realm-cocoa", .exact(Version("10.5.0")))
     ],
     targets: [
-        .binaryTarget(name: "GMI", url: "https://github.com/ImageWare/GMIPackage/raw/main/GMI.xcframework.zip", checksum: "687e05e19de3221ebb943bb57e0cdb11d64524e5e5ed1dbae1771478685e2029"),
+        .binaryTarget(name: "GMI", url: "https://github.com/ImageWare/GMIPackage/raw/main/GMI.xcframework.zip", checksum: "e98052696a6285d8567e75a736f94727438ffe620a5a2572b0d5d4e847cc3c2c"),
         .binaryTarget(name: "IWS_Shared_Components",
                       path: "IWS_Shared_Components.xcframework"),
         
