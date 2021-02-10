@@ -5,6 +5,7 @@ import Foundation
 @_exported import IWS_Shared_Components
 import Swift
 import SwiftUI
+import Combine
 public protocol Logger {
   func info(_ object: Any?)
   func error(_ string: Swift.String?)
