@@ -15,7 +15,7 @@ let package = Package(
         
     ],
     dependencies: [
-        .package(name: "Realm", url: "https://github.com/realm/realm-cocoa", .exact(Version("10.10.0")))
+        .package(name: "Realm", url: "https://github.com/realm/realm-cocoa", .upToNextMajor(from:Version("10.10.0")))
     ],
     targets: [
         .target(name: "GMIPackage",
@@ -28,7 +28,7 @@ let package = Package(
                         ],
                         path: "GMIPath"
                 ),
-        .binaryTarget(name: "GMI", url: "https://github.com/ImageWare/IWSAuthSDKiOS/raw/main/GMI.xcframework.zip", checksum: "b0a899dcd3372a3c09d168c43c987d6327ca1c768f8c4e1741422f7acaa55e45"),
+        .binaryTarget(name: "GMI", url: "https://github.com/ImageWare/ios_iwa_sdk/raw/cb/update-to-1.6/GMI.xcframework.zip", checksum: "08b3cd5c107fb3349b73fde14484345b97a008919e5bca092775330ae8b524c2"),
         .binaryTarget(name: "IWS_Shared_Components",
                       path: "IWS_Shared_Components.xcframework"),
         
