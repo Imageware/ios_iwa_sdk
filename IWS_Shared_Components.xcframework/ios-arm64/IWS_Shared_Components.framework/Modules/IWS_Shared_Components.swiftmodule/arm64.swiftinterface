@@ -1,11 +1,10 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name IWS_Shared_Components
 import Foundation
 @_exported import IWS_Shared_Components
 import Swift
 import SwiftUI
-import Combine
 public protocol Logger {
   func info(_ object: Any?)
   func error(_ string: Swift.String?)
@@ -26,8 +25,8 @@ extension URLRequest {
   @objc override dynamic public class func canonicalRequest(for request: Foundation.URLRequest) -> Foundation.URLRequest
   @objc override dynamic public func startLoading()
   @objc override dynamic public func stopLoading()
-  @objc deinit
   @objc override dynamic public init(request: Foundation.URLRequest, cachedResponse: Foundation.CachedURLResponse?, client: Foundation.URLProtocolClient?)
+  @objc deinit
 }
 public struct AlertView : SwiftUI.View {
   public init(viewModel: IWS_Shared_Components.AlertViewModel)
@@ -43,14 +42,14 @@ public protocol AlertViewDelegate : AnyObject {
 public class AlertButtonViewModel : Foundation.ObservableObject, Swift.Identifiable {
   public init(title: Swift.String, isDestructive: Swift.Bool = false, onPressed: IWS_Shared_Components.AlertButtonClosure? = nil)
   public typealias ID = Swift.ObjectIdentifier
-  @objc deinit
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
 }
 public class AlertViewModel : Foundation.ObservableObject {
   public init(title: Swift.String, subtitle: Swift.String = "", buttons: [IWS_Shared_Components.AlertButtonViewModel], bodyView: SwiftUI.AnyView? = nil)
   public init(title: Swift.String, subtitle: Swift.String = "", bodyView: SwiftUI.AnyView? = nil)
-  @objc deinit
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
 }
 public struct RestError {
   public let statusCode: Swift.Int
@@ -64,6 +63,7 @@ public enum IWSError : Swift.Error {
   case requestFailed
   case noInternet
   case invalidParameters(_: Swift.String)
+  case biometricAttemptFailed(_: Swift.Int)
   case malformedJson
   case maxRetriesExceeded
 }
@@ -74,17 +74,17 @@ public struct ActivityIndicator : SwiftUI.UIViewRepresentable {
   public init(isAnimating: Swift.Bool)
   public func makeUIView(context: SwiftUI.UIViewRepresentableContext<IWS_Shared_Components.ActivityIndicator>) -> IWS_Shared_Components.ActivityIndicator.UIView
   public func updateUIView(_ uiView: IWS_Shared_Components.ActivityIndicator.UIView, context: SwiftUI.UIViewRepresentableContext<IWS_Shared_Components.ActivityIndicator>)
-  public typealias UIViewType = IWS_Shared_Components.ActivityIndicator.UIView
-  public typealias Coordinator = Swift.Void
   public typealias Body = Swift.Never
+  public typealias Coordinator = Swift.Void
+  public typealias UIViewType = IWS_Shared_Components.ActivityIndicator.UIView
 }
 @_hasMissingDesignatedInitializers public class AlertViewHostingController : SwiftUI.UIHostingController<IWS_Shared_Components.AlertView> {
   public init(viewModel: IWS_Shared_Components.AlertViewModel)
   @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
-  @objc deinit
   override public init(rootView: IWS_Shared_Components.AlertView)
   override public init?(coder aDecoder: Foundation.NSCoder, rootView: IWS_Shared_Components.AlertView)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc deinit
 }
 extension AlertViewHostingController : IWS_Shared_Components.AlertViewDelegate {
   public func alertShouldDismiss()
@@ -94,8 +94,8 @@ public enum RequestType : Swift.String {
   case post
   case put
   case delete
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -105,8 +105,8 @@ public enum ContentType : Swift.String {
   case json
   case multipart
   public static let boundaryKey: Swift.String
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -148,8 +148,8 @@ public class NetworkManager<Routes> : ObjectiveC.NSObject, IWS_Shared_Components
   public func load(route: Routes, completion: @escaping ((IWS_Shared_Components.Response<Foundation.Data?>) -> Swift.Void))
   public func load(request: IWS_Shared_Components.Route, route: Routes? = nil, completion: @escaping ((IWS_Shared_Components.Response<Foundation.Data?>) -> Swift.Void))
   public func update(networkContext: Routes.NetworkContext)
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 extension IWS_Shared_Components.RequestType : Swift.Equatable {}
 extension IWS_Shared_Components.RequestType : Swift.Hashable {}
