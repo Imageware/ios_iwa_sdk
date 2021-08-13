@@ -28,7 +28,7 @@ let package = Package(
                         ],
                         path: "GMIPath"
                 ),
-        .binaryTarget(name: "GMI", url: "https://github.com/ImageWare/ios_iwa_sdk/raw/main/GMI.xcframework.zip", checksum: "6ce6dd7064efb59bb61392a6ee7f38103f0553e18d73ab0cf1d777236958473a"),
+        .binaryTarget(name: "GMI", url: "https://github.com/ImageWare/ios_iwa_sdk/raw/cb/update-to-1.6/GMI.xcframework.zip", checksum: "6ce6dd7064efb59bb61392a6ee7f38103f0553e18d73ab0cf1d777236958473a"),
         .binaryTarget(name: "IWS_Shared_Components",
                       path: "IWS_Shared_Components.xcframework"),
         
