@@ -15,7 +15,7 @@ let package = Package(
         
     ],
     dependencies: [
-        .package(name: "Realm", url: "https://github.com/realm/realm-cocoa", .exact(Version("10.5.0")))
+        .package(name: "Realm", url: "https://github.com/realm/realm-cocoa", .exact(Version("10.10.0")))
     ],
     targets: [
         .target(name: "GMIPackage",
